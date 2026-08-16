@@ -1,105 +1,874 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--Portfolio-->
-  <title>Portfolio</title>
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="style.css">
-  <!-- icon stylesheet -->
-  <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
-  <div class="container">
-    <div class="profile-card">
-      <div class="profile-pic">
-        <img src="dplogo.jpg" alt="user-avtar">
-      </div>
-      <div class="profile-details">
-        <div class="<intro">
-        <h1>Pawan Maurya </h1>
-        <h4>UI/UX Designer </h4>
-        <div class="social">
-             <a href="https://github.com/pawanmaurya87555-cmyk" target="_blank"><i class="fab fa-github" style="color: #f5f5f5 ;"></i></a>
-           <a href="https://www.instagram.com/melancholic.nx?igsh=MXd6MnV0ZTdjOXRybQ==" target="_blank"><i class="fab fa-instagram" style="color: var(--instagram);"></i></a>
-           <a href="https://www.facebook.com/share/1Hkeqn13B9/" target="_blank"><i class="fab fa-facebook" style="color: #1877F2;"></i></a>
-           <a href="https://www.linkedin.com/in/pawan-maurya-6421b841b" target="_blank"><i class="fab fa-linkedin" style="color: #0A66C2"></i></a>        
-        </div>
-        </div>
-        <div class="contact-info">
-          <div class="row">
-           <div class="icon">
-              <i class="fa-solid fa-phone" style=" color: var(--phone);"></i>
-            </div>
-            <div class="content">
-              <span>Phone</span>
-              <h5>+91 875 550 4023</h5>
-            </div>
-          </div>
-          <div class="row">
-           <div class="icon">
-              <i class="fa-solid fa-envelope-open" style=" color: var(--email);"></i>
-            </div>
-            <div class="content">
-              <span>Email</span>
-              <h5>pawanmaurya87555@gmail.com</h5>
-            </div>
-          </div>
-          <div class="row">
-           <div class="icon">
-              <i class="fa-solid fa-location-dot" style=" color: var(--location);"></i>
-            </div>
-            <div class="content">
-              <span>Location</span>
-              <h5>Uttarakhand India</h5>
-            </div>
-          </div>
-        </div>
-        <div>
-         <a href="https://in.docworkspace.com/d/sbCaedWQM8G9Wirb_ebspqrkx2vc5mng9yj"><button class="download-btn"><i class="fa-solid fa-download"></i> Download CV</button></a></div>
-      </div>
-    </div>
-    
-    <!----about section ----->
-    
-    <div class="about">
-      <h1>About Me</h1>
-      <p>
-       Hello! I'm Pawan Maurya, a passionate student and aspiring Web Developer from India. I enjoy learning new technologies and turning creative ideas into websites. My journey in web development started with curiosity, and since then I have been continuously improving my skills in HTML, CSS, and JavaScript through practice and personal projects.
-</p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p>
-  I believe that learning is a lifelong process. Along with my studies, I spend time exploring modern web design, responsive layouts, and user-friendly interfaces. I enjoy solving problems, building projects, and challenging myself to learn something new every day.
-</p>
-<h2>What I Do !!</h2>
-<div class="work">
-  <div class="workbox">
-    <div class="icon">
-      <img src="ui.svg">
+    <meta name="description"
+        content="Pawan Maurya - Frontend Developer and UI/UX Learner">
+
+    <title>Pawan Maurya | Frontend Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background">
+        <span class="blob blob-one"></span>
+        <span class="blob blob-two"></span>
+        <span class="grid"></span>
     </div>
-    <div class="desc">
-      <h3>UI/UX Designer</h3>
-      <p>
-      I am passionate about creating clean, modern, and user-friendly interfaces. I enjoy learning design principles, color combinations, typography, and layout techniques to build visually appealing and intuitive digital experiences.
-</p>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header" id="header">
+
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <a href="#home" class="logo">
+                <span class="logo-box">P</span>
+                <span>Pawan<span class="dot">.</span></span>
+            </a>
+
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+
+                <a href="#home" class="nav-link active">Home</a>
+
+                <a href="#about" class="nav-link">About</a>
+
+                <a href="#projects" class="nav-link">Projects</a>
+
+                <a href="#contact" class="nav-link">Contact</a>
+
+            </nav>
+
+
+            <!-- Controls -->
+            <div class="nav-controls">
+
+                <!-- Language -->
+                <div class="language">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <select id="languageSelect">
+                        <option value="en">EN</option>
+                        <option value="hi">हिं</option>
+                    </select>
+
+                </div>
+
+
+                <!-- Theme -->
+                <button
+                    class="theme-btn"
+                    id="themeToggle"
+                    aria-label="Change theme">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+                <!-- Mobile Menu -->
+                <button
+                    class="menu-btn"
+                    id="menuToggle"
+                    aria-label="Open menu">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Mobile Menu -->
+
+        <div class="mobile-menu" id="mobileMenu">
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#contact">Contact</a>
+
+
+            <div class="mobile-option">
+
+                <span>
+                    <i class="fa-solid fa-globe"></i>
+                    Language
+                </span>
+
+                <select id="mobileLanguage">
+
+                    <option value="en">English</option>
+
+                    <option value="hi">हिंदी</option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                class="mobile-theme"
+                id="mobileThemeToggle">
+
+                <span>
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                    Theme
+                </span>
+
+                <span id="themeText">Light</span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- ================= HOME ================= -->
+
+        <section class="hero" id="home">
+
+            <div class="container hero-grid">
+
+
+                <!-- Hero Text -->
+
+                <div class="hero-content reveal">
+
+                    <div class="status">
+
+                        <span></span>
+
+                        Building • Learning • Improving
+
+                    </div>
+
+
+                    <p class="hello">
+                        Hello, I'm
+                    </p>
+
+
+                    <h1>
+                        Pawan
+                        <span>Maurya</span>
+                    </h1>
+
+
+                    <h2>
+
+                        A
+                        <span id="typing">
+                            Frontend Developer
+                        </span>
+
+                        <b>|</b>
+
+                    </h2>
+
+
+                    <p class="hero-description">
+
+                        I create clean, responsive and user-friendly
+                        websites using HTML, CSS and JavaScript.
+                        I enjoy turning ideas into practical digital
+                        experiences.
+
+                    </p>
+
+
+                    <!-- Buttons -->
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects"
+                            class="btn primary">
+
+                            View Projects
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                        <a href="#contact"
+                            class="btn secondary">
+
+                            Contact Me
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- Social -->
+
+                    <div class="socials">
+
+                        <a
+                            href="https://github.com/pawanmaurya87555-cmyk"
+                            target="_blank">
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+
+
+                        <a
+                            href="https://www.linkedin.com/in/pawan-maurya-6421b841b"
+                            target="_blank">
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
+                        </a>
+
+
+                        <a
+                            href="https://www.instagram.com/melancholic.nx"
+                            target="_blank">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+
+                        <a
+                            href="https://www.facebook.com/share/1Hkeqn13B9/"
+                            target="_blank">
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Hero Image -->
+
+                <div class="hero-image reveal">
+
+                    <div class="orbit orbit-one"></div>
+
+                    <div class="orbit orbit-two"></div>
+
+                    <div class="image-glow"></div>
+
+
+                    <div class="profile-container">
+
+                        <div class="skill-badge top">
+
+                            <i class="fa-solid fa-code"></i>
+
+                            HTML · CSS · JS
+
+                        </div>
+
+
+                        <div class="skill-badge bottom">
+
+                            <i class="fa-solid fa-pen-ruler"></i>
+
+                            UI / UX
+
+                        </div>
+
+
+                        <img
+                            src="profile.png"
+                            alt="Pawan Maurya"
+                            class="profile">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Statistics -->
+
+            <div class="container stats">
+
+                <div>
+                    <strong>10th</strong>
+                    <span>Class / Student</span>
+                </div>
+
+                <div>
+                    <strong>3+</strong>
+                    <span>Core Technologies</span>
+                </div>
+
+                <div>
+                    <strong>5+</strong>
+                    <span>Personal Projects</span>
+                </div>
+
+                <div>
+                    <strong>100%</strong>
+                    <span>Learning Mindset</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="section light-section" id="about">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <p>ABOUT ME</p>
+
+                    <h2>
+                        Learning by building,
+                        improving by doing.
+                    </h2>
+
+                    <span>
+
+                        I'm a student and aspiring frontend developer
+                        focused on responsive interfaces, clean design
+                        and practical development.
+
+                    </span>
+
+                </div>
+
+
+
+                <div class="about-grid">
+
+
+                    <div class="info-card reveal">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <h3>
+                            Frontend Development
+                        </h3>
+
+                        <p>
+
+                            Responsive layouts, semantic HTML,
+                            modern CSS and JavaScript interactions.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="info-card reveal">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </div>
+
+                        <h3>
+                            UI / UX Design
+                        </h3>
+
+                        <p>
+
+                            Clean visual hierarchy, spacing,
+                            typography and user-friendly interfaces.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="info-card reveal">
+
+                        <div class="icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+
+                        <h3>
+                            Problem Solving
+                        </h3>
+
+                        <p>
+
+                            I learn by building projects,
+                            finding problems and fixing them.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Skills -->
+
+                <div class="skills-box reveal">
+
+                    <div>
+
+                        <p>SKILLS</p>
+
+                        <h3>
+                            Technologies I work with
+                        </h3>
+
+                    </div>
+
+
+                    <div class="skills">
+
+                        <span>HTML5</span>
+
+                        <span>CSS3</span>
+
+                        <span>JavaScript</span>
+
+                        <span>Responsive Design</span>
+
+                        <span>UI / UX</span>
+
+                        <span>Git & GitHub</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="section" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <p>SELECTED WORK</p>
+
+                    <h2>
+                        Projects that show
+                        how I think.
+                    </h2>
+
+                    <span>
+
+                        A few practical projects that demonstrate
+                        my current skills and learning journey.
+
+                    </span>
+
+                </div>
+
+
+
+                <div class="projects">
+
+
+                    <!-- Project 1 -->
+
+                    <article class="project-card reveal">
+
+                        <div class="project-image blue">
+
+                            <span>01</span>
+
+                            <i class="fa-solid fa-layer-group"></i>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <small>
+                                HTML · CSS
+                            </small>
+
+                            <h3>
+                                Personal Portfolio
+                            </h3>
+
+                            <p>
+
+                                A responsive personal portfolio
+                                focused on clean structure,
+                                modern UI and mobile usability.
+
+                            </p>
+
+
+                            <div class="tags">
+
+                                <span>Responsive</span>
+
+                                <span>UI Design</span>
+
+                            </div>
+
+
+                            <a href="#contact">
+
+                                Discuss Project
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Project 2 -->
+
+                    <article class="project-card reveal">
+
+                        <div class="project-image purple">
+
+                            <span>02</span>
+
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <small>
+                                JavaScript
+                            </small>
+
+                            <h3>
+                                Interactive UI
+                            </h3>
+
+                            <p>
+
+                                Small JavaScript interactions
+                                created to understand DOM events
+                                and user feedback.
+
+                            </p>
+
+
+                            <div class="tags">
+
+                                <span>JavaScript</span>
+
+                                <span>DOM</span>
+
+                            </div>
+
+
+                            <a href="#contact">
+
+                                Discuss Project
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Project 3 -->
+
+                    <article class="project-card reveal">
+
+                        <div class="project-image green">
+
+                            <span>03</span>
+
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <small>
+                                UI / UX
+                            </small>
+
+                            <h3>
+                                Mobile-first Concept
+                            </h3>
+
+                            <p>
+
+                                A simple interface concept designed
+                                around mobile navigation and
+                                comfortable touch interaction.
+
+                            </p>
+
+
+                            <div class="tags">
+
+                                <span>Mobile UI</span>
+
+                                <span>UX</span>
+
+                            </div>
+
+
+                            <a href="#contact">
+
+                                Discuss Project
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="section light-section" id="contact">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <p>CONTACT</p>
+
+                    <h2>
+                        Have an idea?
+                        Let's talk.
+                    </h2>
+
+                    <span>
+
+                        If you have a website idea,
+                        design task or simply want to connect,
+                        send me a message.
+
+                    </span>
+
+                </div>
+
+
+
+                <div class="contact-grid">
+
+
+                    <div class="contact-details reveal">
+
+                        <a
+                            href="mailto:pawanmaurya87555@gmail.com"
+                            class="contact-card">
+
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+
+                            <div>
+
+                                <small>Email</small>
+
+                                <strong>
+                                    pawanmaurya87555@gmail.com
+                                </strong>
+
+                            </div>
+
+                        </a>
+
+
+                        <a
+                            href="tel:+918755504023"
+                            class="contact-card">
+
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+
+                            <div>
+
+                                <small>Phone</small>
+
+                                <strong>
+                                    +91 875 550 4023
+                                </strong>
+
+                            </div>
+
+                        </a>
+
+
+                        <div class="contact-card">
+
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <div>
+
+                                <small>Location</small>
+
+                                <strong>
+                                    Uttarakhand, India
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Contact Form -->
+
+                    <form
+                        class="contact-form reveal"
+                        id="contactForm">
+
+                        <label>
+                            Name
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Your name"
+                                required>
+
+                        </label>
+
+
+                        <label>
+                            Email
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="you@example.com"
+                                required>
+
+                        </label>
+
+
+                        <label>
+                            Message
+
+                            <textarea
+                                id="message"
+                                placeholder="Tell me about your idea..."
+                                required></textarea>
+
+                        </label>
+
+
+                        <button
+                            type="submit"
+                            class="btn primary">
+
+                            Send Message
+
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                        </button>
+
+
+                        <p id="formMessage"></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+<footer>
+    <div class="container footer-Content">
+        <p>
+        ©<span id="year"></span>
+        Pawan Maurya.
+        Built with HTML, CSS & JavaScript.
+    </p>
+    <a href="#home">
+        <i class=" fa-solid fa-arrow-up"></i>
+    </a>
     </div>
-  </div>
-  <div class="workbox">
-    <div class="icon">
-      <img src="web.svg">
-    </div>
-    <div class="desc">
-      <h3>Web Development</h3>
-      <p>
-      I develop responsive websites using HTML, CSS, and JavaScript. My focus is on creating visually attractive, mobile-friendly, and user-focused web experiences while continuously improving my coding and problem-solving skills.
-</p>
-    </div>
-  </div>
-</div>
-    </div>
-  </div>
+</footer>
+
+<!------- JavaScript ------>
+
+<script src="function.js"></script>
 </body>
 </html>
