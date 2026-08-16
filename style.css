@@ -1924,13 +1924,23 @@ border-color: var(--primary);
 }
 /* ================= ANIMATION ================= */
 .reveal {
-opacity: 0;
-transform:
-translateY(25px);
-transition:
-opacity .7s ease,
-transform .7s ease;
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
 }
+
+.js-enabled .reveal {
+    opacity: 0;
+    transform: translateY(25px);
+}
+
+.js-enabled .reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .reveal.show {
 opacity: 1;
 transform:
